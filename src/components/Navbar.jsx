@@ -15,7 +15,7 @@ export default function Navbar() {
         <li><a href="#contact">{t.nav.contact}</a></li>
         <li>
           <a 
-            href={language === "en" ? "/src/assets/CV-ENG.pdf" : "/src/assets/CV-FRANCAIS.pdf"} 
+           href={language === "en" ? "/CV-ENG.pdf" : "/CV-FRANCAIS.pdf"}
             download 
             className="nav-resume"
           >
