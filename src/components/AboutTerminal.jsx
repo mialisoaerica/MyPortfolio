@@ -7,7 +7,6 @@ export default function AboutTerminal() {
     <section className="about" id="about">
       <div className="about-inner">
 
-        {/* ── PHOTO ── */}
         <div className="about-photo-wrapper">
           <div className="about-photo-glow" />
           <img
@@ -21,7 +20,6 @@ export default function AboutTerminal() {
           </div>
         </div>
 
-        {/* ── TERMINAL ── */}
         <div className="terminal">
           <div className="terminal-bar">
             <span className="terminal-title">{t.about.title}</span>

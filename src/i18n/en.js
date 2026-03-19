@@ -22,7 +22,7 @@ export const en = {
   about: {
     title: "mialisoa ~ about.sh",
     whoami: "Mialisoa — Full-Stack Developer",
-    bio: "Hi! I'm a full-stack developer passionate about backend development and business logic. I enjoy building structured, secure, and maintainable applications.",
+    bio: "I am a full-stack developer with a strong focus on the backend. I love getting into the logic that makes an app work, like clean architecture, solid APIs, and code that will last. It's not enough for me to just make software work; I also want it to make sense.",
     skills: ["Frontend", "Databases", "Backend", "Git"],
     available: "Available for work",
   },

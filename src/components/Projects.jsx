@@ -73,28 +73,23 @@ export default function Projects() {
         {projects.map((p) => {
           const s = STATUS[p.status];
           return (
-            <div className="p-card" key={p.title}>
-              {/* header */}
-              <div className="p-card-header">
+              <div className="p-card" key={p.title}>\n              <div className="p-card-header">
                 <h3 className="p-card-title">{p.title}</h3>
                 <span className="p-status" style={{ color: s.color, background: s.bg }}>
                   {language === "en" ? s.label : s.labelFr}
                 </span>
               </div>
 
-              {/* description */}
               <p className="p-card-desc">
                 {language === "en" ? p.desc : p.descFr}
               </p>
 
-              {/* stack */}
               <div className="p-stack">
                 {p.stack.map((t) => (
                   <span key={t} className="p-tag">{t}</span>
                 ))}
               </div>
 
-              {/* liens */}
               <div className="p-links">
                 <a href={p.github} className="p-link" target="_blank" rel="noreferrer">
                   {t.projects.github}

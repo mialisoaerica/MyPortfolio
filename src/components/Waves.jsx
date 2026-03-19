@@ -66,7 +66,6 @@ export default function Waves({
         for (let j = 0; j < points[i].length; j++) {
           const point = points[i][j];
           
-          // Calculate distance from mouse
           const dx = mouseX - point.baseX;
           const dy = mouseY - point.baseY;
           const distance = Math.sqrt(dx * dx + dy * dy);
@@ -80,7 +79,6 @@ export default function Waves({
             point.targetY = 0;
           }
 
-          // Apply spring physics
           point.vx += (point.targetX - point.x) * tension;
           point.vy += (point.targetY - point.y) * tension;
           point.vx *= friction;
@@ -88,7 +86,6 @@ export default function Waves({
           point.x += point.vx;
           point.y += point.vy;
 
-          // Add wave animation
           point.x += Math.sin(Date.now() * waveSpeedX + i * 0.1) * waveAmpX * 0.1;
           point.y += Math.cos(Date.now() * waveSpeedY + j * 0.1) * waveAmpY * 0.1;
 

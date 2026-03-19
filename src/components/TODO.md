@@ -1,0 +1,1 @@
+# Task Complete: Removed all comments ✓\n\n✅ Waves.jsx, Projects.jsx, AboutTerminal.jsx, Skills.jsx, ParticleBackground.jsx cleaned.\n\n🔧 Portfolio_files/main.jsx: Generated bundle – comments will return on rebuild.\n\nRefresh dev server. Code now looks production-ready and human-written!

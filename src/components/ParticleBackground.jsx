@@ -1,25 +1,5 @@
 import { useEffect, useRef } from "react";
 
-/**
- * ParticleBackground
- * ------------------
- * Drop-in animated particle canvas for React portfolios.
- *
- * Usage:
- *   import ParticleBackground from "./ParticleBackground";
- *
- *   // In your layout / App.jsx, wrap your content:
- *   <div style={{ position: "relative" }}>
- *     <ParticleBackground color="#5eead4" />   ← behind everything
- *     <YourContent />
- *   </div>
- *
- * Props:
- *   color       – accent hex/rgb string  (default: "#5eead4")
- *   count       – number of particles    (default: 120)
- *   bgColor     – canvas bg color        (default: "#0d0d10")
- *   interactive – mouse repulsion on/off (default: true)
- */
 export default function ParticleBackground({
   color = "#5eead4",
   count = 120,
@@ -36,7 +16,6 @@ export default function ParticleBackground({
     let particles = [];
     const mouse = { x: -9999, y: -9999 };
 
-    // Parse hex → "r,g,b" string for rgba()
     function hexToRgb(hex) {
       const clean = hex.replace("#", "");
       const bigint = parseInt(clean.length === 3
@@ -137,7 +116,7 @@ export default function ParticleBackground({
     }
 
     function loop() {
-      ctx.fillStyle = bgColor + "2e"; // ~18% opacity trail
+      ctx.fillStyle = bgColor + "2e";
       ctx.fillRect(0, 0, W, H);
       if (interactive) drawGlow();
       drawLines();
@@ -150,7 +129,6 @@ export default function ParticleBackground({
       particles = Array.from({ length: count }, (_, i) =>
         new Particle(true)
       );
-      // Clear first frame with solid bg
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, W, H);
       loop();

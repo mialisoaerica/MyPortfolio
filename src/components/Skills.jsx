@@ -43,7 +43,6 @@ const skills = [
 export default function Skills() {
   const { t } = useLanguage();
 
-  // Map translation keys to skill categories
   const categoryMap = {
     "Frontend": t.skills.categories.frontend,
     "Backend": t.skills.categories.backend,
