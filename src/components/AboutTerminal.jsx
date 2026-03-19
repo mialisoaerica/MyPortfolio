@@ -1,4 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
+import photo from "../assets/photo.jpg";
 
 export default function AboutTerminal() {
   const { t } = useLanguage();
@@ -10,10 +11,10 @@ export default function AboutTerminal() {
         <div className="about-photo-wrapper">
           <div className="about-photo-glow" />
           <img
-  src="/src/assets/photo.jpg"
-  alt="Mialisoa"
-  className="about-photo"
-/>
+            src={photo}
+            alt="Mialisoa"
+            className="about-photo"
+          />
           <div className="about-photo-badge">
             <span className="badge-dot" />
             {t.about.available}
@@ -61,4 +62,3 @@ export default function AboutTerminal() {
     </section>
   );
 }
-
